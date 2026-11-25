@@ -1,0 +1,47 @@
+<!-- @dsCard group="図" height=380 -->
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>ArchDiagram</title>
+<style>
+html,body{margin:0;background:var(--ground);font-family:var(--font-sans);}
+.arch{position:relative;width:860px;height:330px;margin:20px;}
+.zone{position:absolute;box-sizing:border-box;border:2px solid var(--rule);border-radius:12px;background:var(--surface);}
+.zone.ext{border:2px dashed var(--rule-mid);background:var(--ground);}
+.zh{position:absolute;margin:0;font-size:12px;font-weight:700;color:var(--ink-3);}
+.an{position:absolute;box-sizing:border-box;height:70px;border:2px solid var(--rule);border-radius:8px;background:var(--surface);padding:6px 9px;display:flex;flex-direction:column;gap:2px;}
+.an.store{background:var(--sunk);} .an.ai{background:var(--tint);}
+.an.ext{border-style:dashed;border-color:var(--rule-mid);} .an.focal{border-color:var(--accent);}
+.an.plan{background:var(--sunk);border-style:dashed;border-color:var(--rule-mid);}
+.atag{margin:0;align-self:flex-start;font-size:11px;line-height:15px;font-weight:700;color:var(--on-ink);background:var(--ink);border-radius:4px;padding:0 5px;}
+.anm{margin:0;font-size:14px;line-height:18px;font-weight:700;color:var(--ink);}
+.asb{margin:0;font-size:12px;line-height:16px;color:var(--ink-3);}
+.alab{position:absolute;margin:0;font-size:12px;font-weight:700;color:var(--ink-2);}
+.anote{position:absolute;margin:0;font-size:12px;line-height:16px;color:var(--ink-3);}
+.acall{position:absolute;margin:0;font-size:13px;line-height:18px;font-weight:700;color:var(--ink);}
+.legend{margin:0 20px 16px;font-size:12px;color:var(--ink-3);}
+svg{position:absolute;left:0;top:0;}
+</style></head><body>
+<div class="arch">
+<div class="zone ext" style="left:0;top:0;width:130px;height:330px;"></div>
+<div class="zone" style="left:150px;top:0;width:710px;height:330px;"></div>
+<p class="zh" style="left:10px;top:7px;">外部</p>
+<p class="zh" style="left:160px;top:7px;">クラウド（例）</p>
+<svg width="860" height="330" viewBox="0 0 860 330"><g fill="none" stroke="var(--rule)" stroke-width="2">
+<path d="M120 70 H208"/><polyline points="201,65 208,70 201,75"/>
+<path d="M350 70 H398"/><polyline points="391,65 398,70 391,75"/>
+<path d="M540 70 H588"/><polyline points="581,65 588,70 581,75"/>
+<path d="M470 105 V218"/><polyline points="465,211 470,218 475,211"/>
+<path d="M660 105 V218"/><polyline points="655,211 660,218 665,211"/>
+</g></svg>
+<div class="an ext" style="left:10px;top:35px;width:110px;"><p class="atag">人</p><p class="anm">利用者</p></div>
+<div class="an" style="left:210px;top:35px;width:140px;"><p class="atag">API</p><p class="anm">受付</p><p class="asb">処理＝白い面</p></div>
+<div class="an ai focal" style="left:400px;top:35px;width:140px;"><p class="atag">AI</p><p class="anm">要約</p><p class="asb">焦点＝マゼンタの枠</p></div>
+<div class="an" style="left:590px;top:35px;width:140px;"><p class="atag">処理</p><p class="anm">整形</p></div>
+<div class="an store" style="left:400px;top:220px;width:140px;"><p class="atag">DB</p><p class="anm">記録</p><p class="asb">置き場＝灰の面</p></div>
+<div class="an plan" style="left:590px;top:220px;width:160px;"><p class="atag">予定</p><p class="anm">通知</p><p class="asb">未確定＝破線</p></div>
+<p class="alab" style="left:158px;top:50px;">依頼</p>
+<p class="alab" style="left:478px;top:150px;">結果</p>
+<p class="anote" style="left:210px;top:115px;width:170px;">補足は部品のすぐ下に<br>細い灰の文字で</p>
+<p class="acall" style="left:672px;top:140px;width:180px;">仕組みの要は1つだけ<br>太字で線の横に</p>
+</div>
+<p class="legend">例：白＝処理　灰＝置き場　淡い紫＝AI　破線＝外部・未確定　マゼンタの枠＝焦点（凡例は使った意味だけ）</p>
+</body></html>

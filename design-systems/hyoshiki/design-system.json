@@ -1,0 +1,28 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-24T11:20:00Z"
+  },
+  "title": "標識",
+  "namespace": "標識",
+  "libraries": [],
+  "sections": {},
+  "groups": [],
+  "assetGroups": {},
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/slides.md",
+      "project/pictograms.md"
+    ]
+  },
+  "lastChange": {
+    "by": "Claude",
+    "at": "2026-11-24T11:20:00Z",
+    "via": "Claude (claude.ai)",
+    "note": "見本デッキから作成"
+  }
+}

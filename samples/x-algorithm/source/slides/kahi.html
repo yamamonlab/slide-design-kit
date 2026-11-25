@@ -1,0 +1,40 @@
+<section id="kahi">
+<div class="hd"><div class="bar"></div><h2>順位づけと表示の可否</h2></div>
+<p class="lead">点が高くても、可視性フィルタが落とせば<span class="em">表示されない</span>。2つは別の仕組み。</p>
+<div class="main">
+<div class="row grow">
+<div class="pnl grow">
+<p class="ph">順位づけ</p><div class="sp"></div>
+<p class="psc">Phoenix と RankingScorer</p>
+<div class="nd lil"><p class="nt">行動の確率から点をつける</p></div>
+<svg aria-label="下へ" width="28" height="40" viewBox="0 0 28 40"><line x1="14" y1="2" x2="14" y2="34" stroke="#2A2A2A" stroke-width="3"/><polyline points="5,24 14,35 23,24" fill="none" stroke="#2A2A2A" stroke-width="3"/></svg>
+<div class="nd"><p class="nt">点の高い順に上位を選ぶ</p></div>
+<div class="sp"></div>
+<div class="chip"><p class="cx">並び順を決める</p></div>
+</div>
+<div class="pnl grow">
+<p class="ph">表示の可否</p><div class="sp"></div>
+<p class="psc">可視性フィルタ（visibility-filtering）</p>
+<div class="vf">
+<div class="nd"><p class="nt">ALLOW</p><p class="ndc">通常どおり表示</p></div>
+<div class="nd"><p class="nt">NOTICE</p><p class="ndc">注記をつけて表示</p></div>
+<div class="nd"><p class="nt">INTERSTITIAL</p><p class="ndc">タップで開く画面の奥</p></div>
+<div class="nd gray"><p class="nt">DROP</p><p class="ndc">表示しない</p></div>
+</div>
+<p class="pt">投稿と閲覧者の組ごとに4つのどれかを返す。<br>最初に DROP と答えたルールで判定が終わる。</p>
+<div class="sp"></div>
+<div class="chip"><p class="cx">表示してよいかを決める</p></div>
+</div>
+</div>
+<p class="ps" style="font-weight:700;color:#1A1A1A;">処理の順：表示の可否は、上位を選んだあとに確かめる</p>
+<div class="rowc" style="gap:12px;margin-top:-12px;">
+<div class="nd grow"><p class="nt">集めて除く</p></div><svg aria-label="次へ" width="56" height="28" viewBox="0 0 56 28"><line x1="2" y1="14" x2="50" y2="14" stroke="#2A2A2A" stroke-width="3"/><polyline points="40,5 51,14 40,23" fill="none" stroke="#2A2A2A" stroke-width="3"/></svg>
+<div class="nd lil grow"><p class="nt">点をつける</p></div><svg aria-label="次へ" width="56" height="28" viewBox="0 0 56 28"><line x1="2" y1="14" x2="50" y2="14" stroke="#2A2A2A" stroke-width="3"/><polyline points="40,5 51,14 40,23" fill="none" stroke="#2A2A2A" stroke-width="3"/></svg>
+<div class="nd grow"><p class="nt">上位を選ぶ</p></div><svg aria-label="次へ" width="56" height="28" viewBox="0 0 56 28"><line x1="2" y1="14" x2="50" y2="14" stroke="#2A2A2A" stroke-width="3"/><polyline points="40,5 51,14 40,23" fill="none" stroke="#2A2A2A" stroke-width="3"/></svg>
+<div class="nd acc grow"><p class="nt">表示の可否</p></div><svg aria-label="次へ" width="56" height="28" viewBox="0 0 56 28"><line x1="2" y1="14" x2="50" y2="14" stroke="#2A2A2A" stroke-width="3"/><polyline points="40,5 51,14 40,23" fill="none" stroke="#2A2A2A" stroke-width="3"/></svg>
+<div class="nd grow"><p class="nt">混ぜて返す</p></div>
+</div>
+</div>
+<p class="ft">X のおすすめ欄は、どう決まるか ｜ 出典：github.com/xai-org/x-algorithm（2026-11-24 閲覧）</p>
+<p class="pg">7 / 11</p>
+</section>

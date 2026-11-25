@@ -1,0 +1,25 @@
+/* 標識 — generated from tokens.json */
+:root, [data-theme="paper"] {
+  --ground: #f7f7f4; /* 地。 */
+  --ink: #1c1c1c; /* 文字・記号の体・太い線。ground で 15.9:1。 */
+  --ink-mute: #5c5c59; /* 小見出し・出典。ground で 6.3:1。 */
+  --signal: #d7261e; /* 赤。行動の手がかり（矢印・落ちてくる物・禁止の印）と、大きな数字だけ。ground で 4.7:1。番号や見出しには使わない。 */
+}
+:root {
+  --margin-x: 120px; /* 左右の余白。 */
+  --margin-top: 96px; /* 上の余白。 */
+  --col-gap: 60px; /* 3列の間。 */
+  --rule-top: 8px; /* 列の上の太い線の太さ。 */
+  --radius-none: 0px; /* 角は立てる。記号の体（胴・脚）だけ丸める。 */
+  --stroke-rule: 8px; /* 列・行の上の線。 */
+  --stroke-picto: 14px; /* 記号の線（扉の枠、禁止の円）。 */
+  --stroke-arrow: 16px; /* 赤の矢印の軸。 */
+  --font-sans: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  --text-cover-title: 900 150px/176px var(--font-sans); /* 表紙。2行。 */
+  --text-title: 900 64px/80px var(--font-sans); /* 論点の名詞句。 */
+  --text-lead: 400 30px/44px var(--font-sans); /* 結論を1文。 */
+  --text-mega: 900 260px/250px var(--font-sans); /* いちばん伝えたい数字（時間・分・回数）。signal。1枚に1つ。 */
+  --text-action: 900 44px/58px var(--font-sans); /* 行動の名前。動詞で終える。 */
+  --text-desc: 400 28px/42px var(--font-sans); /* 行動の説明。原資料の言い方で。 */
+  --text-kicker: 700 26px/34px var(--font-sans); /* 場面。ink-mute、字間 0.08em。 */
+}

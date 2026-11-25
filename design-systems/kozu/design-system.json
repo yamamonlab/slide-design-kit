@@ -1,0 +1,27 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-22T08:30:00Z"
+  },
+  "title": "Kozu",
+  "namespace": "Kozu",
+  "libraries": [],
+  "sections": {},
+  "groups": [],
+  "assetGroups": {},
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/slides.md"
+    ]
+  },
+  "lastChange": {
+    "by": "Claude",
+    "at": "2026-11-24T09:15:00Z",
+    "via": "Claude (claude.ai)",
+    "note": "部品 StageMap（段の地図）・IssueRows（論点の行）・KeyValueRows（項目と値の行）の見本と説明を追加"
+  }
+}

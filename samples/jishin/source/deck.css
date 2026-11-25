@@ -1,0 +1,21 @@
+/* モダニズムとピクトグラム：太いゴシック、赤は行動の手がかりだけ、幾何学の記号で伝える。最小文字24px */
+section { background:#F7F7F4; color:#1C1C1C; font-family:'Noto Sans JP','Noto Sans CJK JP',sans-serif; font-weight:400; padding:0; position:relative; }
+section .k { position:absolute; left:120px; top:96px; width:1400px; margin:0; font-size:26px; line-height:34px; font-weight:700; color:#5C5C59; letter-spacing:0.08em; }
+section h2 { position:absolute; left:120px; top:136px; width:1700px; margin:0; font-size:64px; line-height:80px; font-weight:900; color:#1C1C1C; }
+section .ld { position:absolute; left:120px; top:224px; width:1680px; margin:0; font-size:30px; line-height:44px; font-weight:400; color:#1C1C1C; }
+section .src { position:absolute; left:120px; top:990px; width:1500px; margin:0; font-size:24px; line-height:32px; color:#5C5C59; }
+section .pg { position:absolute; left:1640px; top:990px; width:160px; margin:0; text-align:right; font-size:24px; line-height:32px; color:#5C5C59; }
+section .cols { position:absolute; left:120px; top:310px; width:1680px; display:flex; flex-direction:row; gap:60px; }
+section .col { flex:1; display:flex; flex-direction:column; border-top:8px solid #1C1C1C; padding-top:20px; }
+section .no { margin:0; font-size:72px; line-height:80px; font-weight:900; color:#1C1C1C; }
+section .pic { align-self:center; margin:4px 0 12px 0; }
+section .lbl { margin:0; font-size:44px; line-height:58px; font-weight:900; color:#1C1C1C; }
+section .dsc { margin:8px 0 0 0; font-size:28px; line-height:42px; color:#1C1C1C; }
+section .rows { position:absolute; left:120px; top:300px; width:1680px; display:flex; flex-direction:column; gap:20px; }
+section .rw { display:flex; flex-direction:row; align-items:center; gap:40px; border-top:6px solid #1C1C1C; padding-top:12px; }
+section .rw .lbl { font-size:40px; line-height:52px; }
+section .tx { flex:1; }
+section .ct { position:absolute; left:120px; top:330px; width:1000px; margin:0; font-size:150px; line-height:176px; font-weight:900; color:#1C1C1C; }
+section .cs { position:absolute; left:120px; top:720px; width:1000px; margin:0; font-size:36px; line-height:54px; font-weight:700; color:#1C1C1C; }
+section .mega { margin:0; font-size:260px; line-height:250px; font-weight:900; color:#D7261E; letter-spacing:-0.02em; }
+section .megau { margin:0 0 20px 12px; font-size:80px; line-height:90px; font-weight:900; color:#D7261E; }

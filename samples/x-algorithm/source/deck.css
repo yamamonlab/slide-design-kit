@@ -1,0 +1,163 @@
+/* Kozu：温白の地、黒バーの見出し、角丸の黒枠パネルを細い矢印でつなぐ構成図。最小文字24px */
+section {
+  background:#F7F6F2; color:#2B2B2B;
+  font-family:'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif; font-weight:400;
+  padding:64px 96px 0 96px; display:flex; flex-direction:column;
+}
+section .hd { display:flex; flex-direction:row; align-items:center; gap:20px; }
+section .bar { width:12px; height:56px; background:#1A1A1A; }
+section h2 { margin:0; font-size:48px; line-height:60px; font-weight:700; color:#1A1A1A; }
+section .lead { margin:16px 0 0 0; font-size:32px; line-height:48px; color:#2B2B2B; }
+section .em { color:#A8245A; font-weight:700; }
+section .main { margin-top:36px; flex:1; display:flex; flex-direction:column; gap:24px; padding-bottom:112px; }
+section .row { display:flex; flex-direction:row; gap:20px; align-items:stretch; }
+section .rowc { display:flex; flex-direction:row; gap:20px; align-items:center; }
+section .colc { display:flex; flex-direction:column; align-items:center; gap:12px; }
+section .grow { flex:1; }
+section .sp { flex:1; }
+
+/* パネル */
+section .pnl { background:#FFFFFF; border:3px solid #2A2A2A; border-radius:20px; padding:24px 28px; display:flex; flex-direction:column; align-items:center; gap:14px; }
+section .pnl.dash { border-style:dashed; background:#FBFAF8; }
+section .pnl.ask { border-color:#A8245A; flex-direction:row; justify-content:center; gap:20px; padding:20px 28px; }
+section .ph { margin:0; font-size:36px; line-height:48px; font-weight:700; color:#1A1A1A; text-align:center; }
+section .pt { margin:0; font-size:28px; line-height:44px; color:#2B2B2B; text-align:center; }
+section .ps { margin:0; font-size:24px; line-height:38px; color:#555552; }
+section .psc { margin:0; font-size:24px; line-height:38px; color:#555552; text-align:center; }
+section .num { margin:0; font-size:24px; line-height:36px; font-weight:700; color:#FFFFFF; background:#1A1A1A; border-radius:999px; padding:2px 20px; }
+section .num.acc { background:#A8245A; }
+section .big { margin:0; font-size:88px; line-height:100px; font-weight:900; color:#1A1A1A; }
+
+/* 下端の帯（成果物・要点） */
+section .chip { display:flex; flex-direction:row; align-items:center; gap:14px; background:#EDECE8; border-radius:14px; padding:12px 20px; align-self:stretch; }
+section .chip .cx { margin:0; font-size:26px; line-height:38px; font-weight:700; color:#1A1A1A; }
+section .ico { width:32px; height:32px; color:#1A1A1A; }
+
+/* 工程ボックス */
+section .nd { align-self:stretch; background:#FFFFFF; border:3px solid #2A2A2A; border-radius:14px; padding:12px 20px; }
+section .nd.gray { background:#EDECE8; border-color:#8A8985; }
+section .nd.lil { background:#F3ECF6; }
+section .nd.acc { border-color:#A8245A; }
+section .nt { margin:0; font-size:28px; line-height:42px; color:#1A1A1A; text-align:center; font-weight:700; }
+section .nt.mute { color:#555552; font-weight:400; }
+
+/* チャット */
+section .msg { display:flex; flex-direction:row; align-items:flex-start; gap:16px; align-self:stretch; }
+section .av { width:56px; height:56px; border-radius:12px; border:3px solid #2A2A2A; background:#FFFFFF; display:flex; align-items:center; justify-content:center; }
+section .av.ai { background:#1A1A1A; border-color:#1A1A1A; }
+section .avt { margin:0; font-size:24px; line-height:30px; font-weight:900; color:#FFFFFF; }
+section .bub { flex:1; background:#FFFFFF; border:3px solid #2A2A2A; border-radius:14px; padding:10px 20px; }
+section .bub.ai { background:#F3ECF6; }
+section .bt { margin:0; font-size:26px; line-height:40px; color:#1A1A1A; }
+
+/* 注記 */
+section .cap { margin:0; font-size:24px; line-height:36px; color:#555552; text-align:center; }
+section .chev { margin:0; font-size:72px; line-height:72px; font-weight:900; color:#1A1A1A; }
+
+/* フッター */
+section .ft { position:absolute; left:96px; bottom:40px; width:1300px; margin:0; font-size:24px; line-height:30px; color:#555552; }
+section .pg { position:absolute; left:1664px; bottom:40px; width:160px; margin:0; text-align:right; font-size:24px; line-height:30px; color:#555552; }
+
+/* 表紙 */
+section.cover { background:#FFFFFF; padding:72px 120px 0 120px; }
+section .evt { margin:0; font-size:28px; line-height:40px; font-weight:700; color:#1A1A1A; }
+section .ct { margin:190px 0 0 0; font-size:96px; line-height:122px; font-weight:900; color:#1A1A1A; }
+section .csub { margin:28px 0 0 0; font-size:40px; line-height:58px; font-weight:700; color:#1A1A1A; }
+section .cmeta { margin:12px 0 0 0; font-size:28px; line-height:44px; color:#333330; }
+
+/* 章扉 */
+section.div { padding:64px 96px 0 96px; }
+section .crumb { display:flex; flex-direction:row; align-items:center; gap:16px; }
+section .crl { width:160px; height:0; border-top:3px solid #8A8985; }
+section .crd { width:14px; height:14px; border-radius:7px; background:#8A8985; }
+section .crt { margin:0; font-size:24px; line-height:32px; color:#555552; }
+section .dno { margin:300px 0 0 0; font-size:40px; line-height:52px; font-weight:900; color:#A8245A; }
+section .dt { margin:8px 0 0 0; font-size:64px; line-height:84px; font-weight:900; color:#1A1A1A; }
+section .dd { margin:20px 0 0 0; font-size:30px; line-height:46px; color:#333330; width:900px; }
+
+/* タイムライン */
+section .tlbar { display:flex; flex-direction:row; height:76px; border:3px solid #2A2A2A; border-radius:12px; overflow:hidden; }
+section .tb { display:flex; align-items:center; justify-content:center; border-left:3px solid #2A2A2A; }
+section .tb.first { border-left:none; }
+section .tb.w { background:#FFFFFF; }
+section .tb.l { background:#F3ECF6; }
+section .tb.d { background:#1A1A1A; }
+section .tb.g { background:#E4E3DE; }
+section .tbt { margin:0; font-size:24px; line-height:30px; font-weight:700; color:#1A1A1A; }
+section .tbt.inv { color:#FFFFFF; }
+section .tlab { display:flex; flex-direction:row; }
+section .tlc { display:flex; flex-direction:column; gap:2px; padding-left:6px; }
+section .tlt { margin:0; font-size:24px; line-height:32px; color:#555552; font-variant-numeric:tabular-nums; }
+section .tln { margin:0; font-size:26px; line-height:34px; font-weight:700; color:#1A1A1A; }
+section .brk { display:flex; flex-direction:column; align-items:center; gap:6px; }
+section .brl { margin:0; font-size:26px; line-height:36px; font-weight:700; color:#1A1A1A; text-align:center; }
+section .brb { align-self:stretch; height:14px; border:3px solid #2A2A2A; border-bottom:none; }
+
+/* 仕様カード */
+section .spec { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+section .sc { background:#FFFFFF; border:3px solid #2A2A2A; border-radius:16px; padding:14px 22px; display:flex; flex-direction:column; gap:4px; }
+section .sk { display:flex; flex-direction:row; align-items:center; gap:10px; }
+section .skt { margin:0; font-size:24px; line-height:34px; font-weight:700; color:#555552; }
+section .sv { margin:0; font-size:26px; line-height:38px; color:#1A1A1A; }
+
+/* 予算バー */
+section .bud { align-self:stretch; display:flex; flex-direction:column; gap:6px; }
+section .budl { display:flex; flex-direction:row; justify-content:space-between; }
+section .budk { margin:0; font-size:24px; line-height:34px; color:#2B2B2B; }
+section .budv { margin:0; font-size:24px; line-height:34px; font-weight:700; color:#1A1A1A; }
+section .trk { height:20px; background:#EDECE8; border-radius:10px; overflow:hidden; }
+section .fil { height:20px; background:#1A1A1A; border-radius:10px; }
+
+/* 役割リスト */
+section .who { align-self:stretch; display:flex; flex-direction:row; align-items:center; gap:14px; }
+section .whot { margin:0; font-size:28px; line-height:40px; font-weight:700; color:#1A1A1A; }
+section .lst { align-self:stretch; margin:0; padding-left:36px; font-size:24px; line-height:38px; color:#2B2B2B; }
+
+/* 構成図（アーキテクチャ） */
+section .arch { position:relative; width:1728px; height:660px; }
+section .zone { position:absolute; box-sizing:border-box; border:3px solid #2A2A2A; border-radius:20px; background:#FFFFFF; }
+section .zone.ext { border:3px dashed #8A8985; background:#F7F6F2; }
+section .zh { position:absolute; margin:0; font-size:24px; line-height:32px; font-weight:700; color:#555552; }
+section .an { position:absolute; box-sizing:border-box; height:140px; border:3px solid #2A2A2A; border-radius:14px; background:#FFFFFF; padding:10px 16px; display:flex; flex-direction:column; gap:4px; }
+section .an.store { background:#EDECE8; }
+section .an.ai { background:#F3ECF6; }
+section .an.ext { border-style:dashed; border-color:#8A8985; }
+section .an.focal { border-color:#A8245A; }
+section .atag { margin:0; align-self:flex-start; font-size:24px; line-height:28px; font-weight:700; color:#FFFFFF; background:#1A1A1A; border-radius:8px; padding:0 10px; }
+section .anm { margin:0; font-size:28px; line-height:36px; font-weight:700; color:#1A1A1A; }
+section .asb { margin:0; font-size:24px; line-height:32px; color:#555552; }
+section .alab { position:absolute; margin:0; font-size:24px; line-height:30px; font-weight:700; color:#2B2B2B; }
+section .acall { position:absolute; margin:0; font-size:26px; line-height:36px; font-weight:700; color:#1A1A1A; }
+section .legend { margin:12px 0 0 0; font-size:24px; line-height:32px; color:#555552; }
+section .anote { position:absolute; margin:0; font-size:24px; line-height:32px; color:#555552; }
+section .vf { display:grid; grid-template-columns:1fr 1fr; gap:14px; align-self:stretch; }
+section .nd.list .nt { font-size:24px; line-height:34px; text-align:left; font-weight:700; }
+section .nd .ndc { margin:0; font-size:24px; line-height:32px; color:#555552; text-align:center; }
+section .sc.lg { padding:22px 28px; }
+section .sc.lg .skt { font-size:30px; line-height:44px; color:#1A1A1A; }
+section .sc.lg .sv { font-size:28px; line-height:46px; margin-top:8px; }
+section .lst.lg { font-size:26px; line-height:42px; }
+/* 段の地図（設計の考え方） */
+section .cols { display:flex; flex-direction:row; gap:12px; align-items:flex-start; }
+section .col { flex:0 0 372px; display:flex; flex-direction:column; align-items:stretch; gap:16px; }
+section .gap56 { flex:0 0 56px; }
+section .vl { align-self:center; width:3px; height:28px; background:#2A2A2A; margin:-16px 0 -16px 0; }
+section .dc { background:#FFFFFF; border:3px solid #2A2A2A; border-radius:14px; padding:16px 22px; display:flex; flex-direction:column; gap:6px; }
+section .dc.acc { border-color:#A8245A; }
+section .dct { margin:0; font-size:28px; line-height:38px; font-weight:700; color:#1A1A1A; }
+section .dcb { margin:0; font-size:24px; line-height:36px; color:#2B2B2B; }
+section .dcc { margin:0; font-size:24px; line-height:32px; color:#555552; }
+/* 論点の行（読むときの注意） */
+section .rhd { display:grid; grid-template-columns:400px 1fr 56px 1fr; column-gap:24px; padding:0 31px; }
+section .rhd p { margin:0; font-size:24px; line-height:32px; font-weight:700; color:#555552; }
+section .rw { display:grid; grid-template-columns:400px 1fr 56px 1fr; column-gap:24px; align-items:center; background:#FFFFFF; border:3px solid #2A2A2A; border-radius:20px; padding:20px 28px; }
+section .rwh { display:flex; flex-direction:column; gap:6px; }
+section .rwt { margin:0; font-size:32px; line-height:44px; font-weight:700; color:#1A1A1A; }
+section .rwx { margin:0; font-size:28px; line-height:42px; color:#2B2B2B; }
+section .rwc { background:#FFFFFF; border:3px solid #2A2A2A; border-radius:14px; padding:14px 20px; }
+section .rwc p { margin:0; font-size:28px; line-height:42px; font-weight:700; color:#1A1A1A; }
+/* 項目と値の行（注意事項） */
+section .kv { align-self:stretch; flex:1; display:flex; flex-direction:row; align-items:center; gap:24px; border-top:2px solid #C9C8C3; }
+section .kv:first-of-type { border-top:none; }
+section .kvk { margin:0; flex:0 0 120px; font-size:24px; line-height:34px; font-weight:700; color:#555552; }
+section .kvv { margin:0; flex:1; font-size:28px; line-height:42px; color:#1A1A1A; }

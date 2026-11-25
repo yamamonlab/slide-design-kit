@@ -1,0 +1,34 @@
+{
+  "v": 3,
+  "assetGroups": {},
+  "blobs": {},
+  "createdOnFiles": {
+    "at": "2026-11-11T12:35:00Z",
+    "v": 1
+  },
+  "docs": {
+    "readme": "project/README.md",
+    "sections": [
+      "project/routing.md",
+      "project/operations.md",
+      "project/types.md",
+      "project/patterns.md",
+      "project/deck.md",
+      "project/charts.md",
+      "project/library.md",
+      "project/new-system.md"
+    ]
+  },
+  "groups": [],
+  "lastChange": {
+    "at": "2026-11-25T00:00:00Z",
+    "by": "Claude",
+    "note": "v1.1：選び方（routing.md）と運用の決まり（operations.md）を追加。公開キット用に目録をこのキットの6システムだけにした。ノードの意味（共通）、解説・勉強会に構成図・パネルの流れ・分岐",
+    "via": "Claude Code"
+  },
+  "layout": "files",
+  "libraries": [],
+  "namespace": "Kiban",
+  "sections": {},
+  "title": "Kiban スライド共通基盤"
+}

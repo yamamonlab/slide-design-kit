@@ -1,0 +1,42 @@
+<!-- @dsCard group="図" height=330 -->
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>StageMap</title>
+<style>
+html,body{margin:0;background:var(--ground);font-family:var(--font-sans);}
+.w{padding:20px;}
+p{margin:0;}
+.nd{box-sizing:border-box;background:var(--surface);border:2px solid var(--rule);border-radius:8px;padding:6px 10px;text-align:center;}
+.nd.ai{background:var(--tint);}
+.nt{font-size:14px;line-height:20px;font-weight:700;color:var(--ink);}
+.ns{font-size:12px;line-height:16px;color:var(--ink-3);}
+.arr{flex:0 0 28px;display:flex;align-items:center;justify-content:center;}
+.dc{background:var(--surface);border:2px solid var(--rule);border-radius:8px;padding:8px 11px;}
+.dc.acc{border-color:var(--accent);}
+.dct{font-size:14px;line-height:19px;font-weight:700;color:var(--ink);}
+.dcb{font-size:12px;line-height:18px;color:var(--ink-2);}
+.dcc{font-size:12px;line-height:16px;color:var(--ink-3);}
+</style>
+<style>
+.brk{display:flex;flex-direction:column;align-items:center;gap:3px;margin-bottom:10px;}
+.brk p{font-size:13px;font-weight:700;color:var(--ink);}
+.brk div{align-self:stretch;height:7px;border:2px solid var(--rule);border-bottom:none;}
+.row{display:flex;gap:0;}
+.col{flex:0 0 186px;display:flex;flex-direction:column;gap:8px;}
+.sp{flex:0 0 28px;}
+.vl{align-self:center;width:2px;height:14px;background:var(--rule);margin:-8px 0;}
+</style></head><body><div class="w">
+<div class="brk"><p>全体に効くもの：上の括弧に書く</p><div></div></div>
+<div class="row" style="margin-bottom:8px;">
+<div class="nd" style="flex:0 0 186px;"><p class="nt">集める</p><p class="ns">段の名前</p></div><div class="arr"><svg width="28" height="14" viewBox="0 0 56 28"><line x1="2" y1="14" x2="50" y2="14" stroke="var(--rule)" stroke-width="4"/><polyline points="40,5 51,14 40,23" fill="none" stroke="var(--rule)" stroke-width="4"/></svg></div>
+<div class="nd ai" style="flex:0 0 186px;"><p class="nt">点をつける</p><p class="ns">AI の段は淡い紫</p></div><div class="arr"><svg width="28" height="14" viewBox="0 0 56 28"><line x1="2" y1="14" x2="50" y2="14" stroke="var(--rule)" stroke-width="4"/><polyline points="40,5 51,14 40,23" fill="none" stroke="var(--rule)" stroke-width="4"/></svg></div>
+<div class="nd" style="flex:0 0 186px;"><p class="nt">選ぶ</p><p class="ns">担う部品</p></div><div class="arr"><svg width="28" height="14" viewBox="0 0 56 28"><line x1="2" y1="14" x2="50" y2="14" stroke="var(--rule)" stroke-width="4"/><polyline points="40,5 51,14 40,23" fill="none" stroke="var(--rule)" stroke-width="4"/></svg></div>
+<div class="nd" style="flex:0 0 186px;"><p class="nt">確かめる</p><p class="ns">担う部品</p></div>
+</div>
+<div class="row">
+<div class="col"><div class="vl"></div><div class="dc"><p class="dct">工夫の名前</p><p class="dcb">効く段の真下に<br>縦線で吊るす</p></div></div><div class="sp"></div>
+<div class="col"><div class="vl"></div><div class="dc acc"><p class="dct">リード文の要</p><p class="dcb">1つだけ<br>マゼンタの枠</p></div><div class="dc"><p class="dct">2枚目</p><p class="dcb">1つの段に2枚まで</p></div></div><div class="sp"></div>
+<div class="col"><div class="vl"></div><div class="dc"><p class="dct">工夫の名前</p><p class="dcb">本文は2〜4行</p><p class="dcc">補足は灰の文字</p></div></div><div class="sp"></div>
+<div class="col"><div class="vl"></div><div class="dc"><p class="dct">工夫の名前</p><p class="dcb">本文は2〜4行</p></div></div>
+</div>
+<p class="dcc" style="margin-top:10px;">例：見本デッキ「X のおすすめ欄」8枚目の組み方</p>
+</div></body></html>
