@@ -30,7 +30,17 @@ PDF と PPTX は [Releases](https://github.com/yamamonlab/slide-design-kit/relea
 ダウンロードは要りません。このページを見ながら進めます。
 
 1. [見本](#見本のスライド)を見て、作りたい資料に近いものを1つ選ぶ。
-2. **Claude を使うとき**：[`docs/依頼文の例.md`](docs/依頼文の例.md) の「共通の書き出し」をコピーし、選んだデザインシステムに合わせて URL を書き換える。その後ろに型ごとの依頼文を続け、ウェブ検索をオンにした Claude のチャットに送る。Claude が依頼文の URL からこのリポジトリのファイルを読んで、同じ見た目でスライドを作ります。
+2. **Claude を使うとき**：Claude の新しいチャットに、次の形で送る。`kozu` は選んだデザインシステムのフォルダ名に置き換える（`yohaku`・`mitsuzu`・`hyoshiki`・`washoku`）。
+
+   ```text
+   次のデザインシステムを読んで、その決まりどおりに、下の素材から日本語のスライドを5枚作ってください。
+   https://raw.githubusercontent.com/yamamonlab/slide-design-kit/main/design-systems/kozu/README.md
+   https://raw.githubusercontent.com/yamamonlab/slide-design-kit/main/design-systems/kozu/slides.md
+
+   【素材】
+   〈ここに材料を貼る〉
+   ```
+
 3. **PowerPoint・Googleスライドで作るとき**：選んだデザインシステムのフォルダの `tokens.css` をこのページで開き、色と文字の大きさを写す。
 
 詳しい手順は [`docs/はじめての人へ.md`](docs/はじめての人へ.md) にあります。
