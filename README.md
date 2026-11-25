@@ -10,7 +10,7 @@ Biz-Terrace.ai の勉強会で配るために公開しています。
 
 | 見本 | デザインシステム | 向いている資料 |
 |---|---|---|
-| [X のおすすめ欄は、どう決まるか](samples/x-algorithm/)<br>![](samples/x-algorithm/preview.jpg) | [Kozu](design-systems/kozu/) | 構成図・流れ・画面や会話のイメージが主役の解説 |
+| [おすすめ欄は、どう決まるか](samples/osusume/)<br>![](samples/osusume/preview.jpg) | [Kozu](design-systems/kozu/) | 構成図・流れ・画面や会話のイメージが主役の解説 |
 | [空き家は、900万戸。](samples/akiya/)<br>![](samples/akiya/preview.jpg) | [余白](design-systems/yohaku/) | 大きな1文・1つの数字・写真で見せる短い発表 |
 | [電気は、何でつくられているか](samples/denki/)<br>![](samples/denki/preview.jpg) | [密図](design-systems/mitsuzu/) | たくさんの数字の関係を1枚で見せる分析・報告 |
 | [地震だ、と思ったら](samples/jishin/)<br>![](samples/jishin/preview.jpg) | [標識](design-systems/hyoshiki/) | 行動・手順・注意を記号で伝える資料 |
