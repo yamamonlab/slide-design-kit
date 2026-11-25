@@ -1,0 +1,25 @@
+<!-- @dsCard group="スライド" height=270 -->
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>SectionDivider</title>
+<style>
+html,body{margin:0;background:var(--ground);font-family:var(--font-sans);}
+.s{position:relative;width:480px;height:270px;background:var(--ground);}
+.crumb{position:absolute;left:24px;top:16px;display:flex;align-items:center;gap:6px;}
+.crumb i{display:block;width:40px;border-top:2px solid var(--rule-mid);}
+.crumb b{display:block;width:6px;height:6px;border-radius:3px;background:var(--rule-mid);}
+.crumb span{font-size:10px;color:var(--ink-3);}
+.no{position:absolute;left:24px;top:110px;margin:0;font-size:16px;font-weight:900;color:var(--accent);}
+.t{position:absolute;left:24px;top:132px;margin:0;font-size:26px;font-weight:900;color:var(--ink);}
+.d{position:absolute;left:24px;top:172px;margin:0;font-size:12px;color:var(--ink-3);}
+.art{position:absolute;left:280px;top:45px;}
+.ln{stroke:var(--rule-mid);stroke-width:4;fill:none;}
+.hol{fill:var(--ground);stroke:var(--rule-mid);stroke-width:4;}
+.fil{fill:var(--rule-mid);}
+.ring{fill:none;stroke:var(--rule-soft);stroke-width:4;stroke-dasharray:10 12;}
+</style></head><body>
+<div class="s">
+<div class="crumb"><i></i><b></b><span>資料名</span></div>
+<p class="no">01</p><p class="t">部品ごとに見る</p><p class="d">この章で話すことを1行</p>
+<svg class="art" width="180" height="180" viewBox="0 0 700 700" aria-hidden="true"><circle class="ring" cx="350" cy="350" r="300"/><g class="ln"><line x1="350" y1="240" x2="465" y2="141"/><line x1="350" y1="240" x2="235" y2="141"/><line x1="460" y1="350" x2="580" y2="350"/><line x1="240" y1="350" x2="120" y2="350"/><line x1="350" y1="460" x2="465" y2="559"/><line x1="350" y1="460" x2="235" y2="559"/></g><circle class="hol" cx="350" cy="350" r="110"/><circle class="hol" cx="580" cy="350" r="32"/><circle class="fil" cx="465" cy="559" r="32"/><circle class="hol" cx="235" cy="559" r="32"/><circle class="fil" cx="120" cy="350" r="32"/><circle class="hol" cx="235" cy="141" r="32"/><circle class="fil" cx="465" cy="141" r="32"/></svg>
+</div>
+</body></html>

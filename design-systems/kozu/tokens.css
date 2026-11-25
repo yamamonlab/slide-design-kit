@@ -1,0 +1,46 @@
+/* Kozu — generated from tokens.json */
+:root, [data-theme="paper"] {
+  --ground: #f7f6f2; /* スライドの地。温かみのある白。本文スライドと章扉に敷く。表紙だけ surface。 */
+  --surface: #ffffff; /* パネル・工程ボックス・吹き出し・仕様カードの面。ground の上に rule の 3px 枠で置く。表紙の地。 */
+  --sunk: #edece8; /* パネル下端の帯（成果物・要点）、選ばれなかった案の工程ボックス、時間の帯の交流区間。 */
+  --ink: #1a1a1a; /* 見出し、見出しの縦バー、ボックス名、番号の丸、AIのアバター、強調する時間区間の塗り。ground で 16.1:1、sunk で 14.7:1。 */
+  --ink-2: #2b2b2b; /* リード文・本文・吹き出しの文字。どの面の上でも 11.9:1 以上。 */
+  --ink-3: #555552; /* 補足行・注記・出典・ページ番号・パンくず。ground で 6.9:1、sunk で 6.3:1。読ませる文字はここまで。 */
+  --rule: #2a2a2a; /* パネル・ボックス・アバターの枠、矢印、分岐の線。意味のある線はすべてこれ。ground で 13.3:1。 */
+  --rule-mid: #8a8985; /* 未確定・選ばない案の破線枠、灰色の矢印、章扉の線画。ground で 3.2:1、sunk で 3.0:1（線の下限）。文字には使わない。 */
+  --rule-soft: #c9c8c3; /* 装飾の区切り線、グラフの目盛線。これだけで区別を伝えない（1.5:1）。 */
+  --accent: #a8245a; /* 唯一の強調色（マゼンタ）。結論の語、焦点の工程ボックスの枠、お願いの枠、章番号、表紙の斜線。1枚に1〜2か所。ground で 6.3:1、accent-bg で 5.8:1。 */
+  --accent-bg: #f6e8ee; /* 強調した箱の面（ごく薄いマゼンタ）。文字は ink か accent。必要なときだけ。 */
+  --on-accent: #ffffff; /* accent の塗り（番号の丸）の上の文字。6.9:1。 */
+  --tint: #f3ecf6; /* AIの発言の吹き出し、体験・AIが担う工程の面、時間の帯の体験区間。文字は ink（15.0:1）。 */
+  --on-ink: #ffffff; /* ink の塗り（番号の丸、AIのアバター、強調する時間区間）の上の文字。17.4:1。 */
+  --chart-base: var(--rule-mid); /* グラフの比較系列。主系列は ink、この1点は accent。 */
+}
+:root {
+  --space-1: 8px; /* アイコンと語、ラベルと数値。 */
+  --space-2: 16px; /* リード文の上、帯同士、吹き出し同士。 */
+  --space-3: 24px; /* パネルの内側（上下）、本文ブロック同士。 */
+  --space-4: 28px; /* パネルの内側（左右）。 */
+  --space-5: 36px; /* リード文と図の間。 */
+  --gap-flow: 20px; /* パネルと矢印の間。矢印は 56×28 の細線。 */
+  --margin-x: 96px; /* 左右の余白。本文領域は 1728px。 */
+  --margin-top: 64px; /* 上の余白（タイトルの上端）。 */
+  --margin-bottom: 96px; /* 下の余白。足元の出典とページ番号は下から 40px。 */
+  --radius-panel: 20px; /* パネルの角。Kozu の顔。 */
+  --radius-node: 14px; /* 工程ボックス、下端の帯、吹き出し。 */
+  --radius-avatar: 12px; /* アバター、時間の帯の外枠。 */
+  --radius-full: 9999px; /* 番号の丸（ラベル型）。 */
+  --stroke: 3px; /* パネル・ボックス・矢印・分岐の線。実線は rule、未確定は rule-mid の破線。 */
+  --stroke-hair: 1px; /* 装飾の区切り（rule-soft）。 */
+  --title-bar: 12px; /* タイトルの左の縦バーの幅（高さ 56px）。 */
+  --font-sans: "Noto Sans JP", "BIZ UDPGothic", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  --text-cover-title: 900 96px/1.27 var(--font-sans); /* 表紙のタイトル。2行まで。強調の1語だけ accent。 */
+  --text-divider-title: 900 64px/1.3 var(--font-sans); /* 章扉の題。章番号（accent、40px・900）の下に。 */
+  --text-title: 700 48px/1.25 var(--font-sans); /* スライドのタイトル＝論点の名詞句。結論はリード文に書く。左に ink の縦バー（12×56px）。1行。 */
+  --text-lead: 400 32px/1.5 var(--font-sans); /* タイトル直下のリード文＝結論。1〜2文、1行が理想、2行まで。結論の語だけ accent の太字。 */
+  --text-heading: 700 36px/1.33 var(--font-sans); /* パネルの見出し。中央揃え。 */
+  --text-body: 400 28px/1.57 var(--font-sans); /* パネル本文。中央揃えが基本、列挙だけ左揃え。工程ボックスの名前は 28px・700。 */
+  --text-label: 700 26px/1.46 var(--font-sans); /* 下端の帯の要点、吹き出し（400）、時間の帯のラベル、仕様カードの値（400）。 */
+  --text-caption: 400 24px/1.5 var(--font-sans); /* 補足・注記・出典・ページ番号・番号の丸。資料全体の最小サイズ。 */
+  --text-figure: 900 88px/1.14 var(--font-sans); /* パネルの中の主要な数字。比較の基準をパネルの中に書く。 */
+}

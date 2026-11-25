@@ -1,0 +1,48 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><title>Cover</title>
+<style>
+  html, body { margin: 0; }
+  body { background: var(--ground); }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--ground); }
+  .art { position: absolute; left: 480px; top: 0; width: 480px; height: 288px; }
+  .ink { fill: var(--ink); }
+  .accent { fill: var(--accent); }
+  .sunk { fill: var(--sunk); }
+  .rule { fill: var(--rule); }
+  .dot { fill: var(--ground); }
+  .blk { rx: var(--radius-0); }
+  .text { position: absolute; left: 48px; bottom: 40px; max-width: 440px; }
+  .name { margin: 0; font-family: var(--font-sans); font-weight: 700; font-size: 112px; line-height: 0.95; letter-spacing: -2px; color: var(--ink); }
+  .tag { margin: 16px 0 0; font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <svg class="art" viewBox="0 0 480 288" aria-hidden="true">
+    <!--
+      blocks: ink 288×192 (space-12×3 by space-12×2), accent 176×96, sunk 176×80, rule 288×80; corners radius-0
+      arrangement: a flush modular grid — the 12-column slide grid seen from above, ink slab bleeding off the top, accent off the right
+      pattern: precise, technical, a 4px grid → a dot grid at one spacing step (space-4, 32px) cut from the ink slab in ground
+      steps/radii: pitch space-4 (32px), gaps space-2 (16px), dots 4px (grid-unit), radius-0
+    -->
+    <rect class="ink blk" x="0" y="0" width="288" height="192"/>
+    <rect class="accent blk" x="304" y="0" width="176" height="96"/>
+    <rect class="sunk blk" x="304" y="112" width="176" height="80"/>
+    <rect class="rule blk" x="0" y="208" width="288" height="80"/>
+    <g class="dot">
+      <rect x="30" y="30" width="4" height="4"/><rect x="62" y="30" width="4" height="4"/><rect x="94" y="30" width="4" height="4"/><rect x="126" y="30" width="4" height="4"/><rect x="158" y="30" width="4" height="4"/><rect x="190" y="30" width="4" height="4"/><rect x="222" y="30" width="4" height="4"/><rect x="254" y="30" width="4" height="4"/>
+      <rect x="30" y="62" width="4" height="4"/><rect x="62" y="62" width="4" height="4"/><rect x="94" y="62" width="4" height="4"/><rect x="126" y="62" width="4" height="4"/><rect x="158" y="62" width="4" height="4"/><rect x="190" y="62" width="4" height="4"/><rect x="222" y="62" width="4" height="4"/><rect x="254" y="62" width="4" height="4"/>
+      <rect x="30" y="94" width="4" height="4"/><rect x="62" y="94" width="4" height="4"/><rect x="94" y="94" width="4" height="4"/><rect x="126" y="94" width="4" height="4"/><rect x="158" y="94" width="4" height="4"/><rect x="190" y="94" width="4" height="4"/><rect x="222" y="94" width="4" height="4"/><rect x="254" y="94" width="4" height="4"/>
+      <rect x="30" y="126" width="4" height="4"/><rect x="62" y="126" width="4" height="4"/><rect x="94" y="126" width="4" height="4"/><rect x="126" y="126" width="4" height="4"/><rect x="158" y="126" width="4" height="4"/><rect x="190" y="126" width="4" height="4"/><rect x="222" y="126" width="4" height="4"/><rect x="254" y="126" width="4" height="4"/>
+      <rect x="30" y="158" width="4" height="4"/><rect x="62" y="158" width="4" height="4"/><rect x="94" y="158" width="4" height="4"/><rect x="126" y="158" width="4" height="4"/><rect x="158" y="158" width="4" height="4"/><rect x="190" y="158" width="4" height="4"/><rect x="222" y="158" width="4" height="4"/><rect x="254" y="158" width="4" height="4"/>
+    </g>
+  </svg>
+  <div class="text">
+    <h1 class="name">Kiban</h1>
+    <p class="tag">どのスライドのデザインシステムも、ここから始める共通基盤。</p>
+  </div>
+</div>
+</body>
+</html>

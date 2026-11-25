@@ -1,0 +1,19 @@
+{
+  "manifestVersion": 3,
+  "name": "Kiban スライド共通基盤",
+  "namespace": "Kiban",
+  "files": [
+    "charts.md",
+    "deck.md",
+    "library.md",
+    "new-system.md",
+    "operations.md",
+    "patterns.md",
+    "routing.md",
+    "tokens.css",
+    "types.md"
+  ],
+  "libraries": [],
+  "components": [],
+  "assetGroups": []
+}

@@ -1,0 +1,28 @@
+/* 余白 — generated from tokens.json */
+:root, [data-theme="paper"] {
+  --ground: #fafaf8; /* 紙。すべてのスライドの地。白に近いが純白ではない。 */
+  --ink: #222222; /* 数字・言い切り・タイトル。ground で 15.2:1。 */
+  --ink-mute: #62625d; /* 小見出し（tag）、出典、注記。ground で 5.9:1。 */
+  --line: #8f8f8a; /* 強調しないデータの線と点。ground で 3.1:1（線の 3:1 を満たす）。文字には使わない。 */
+  --fill: #e4e4df; /* 「全体」を表す淡い面（総住宅数など）。ground とは 1.2:1 しかないので、必ず ink の 2px 枠で囲む。 */
+  --photo: #e9e9e5; /* 写真が届くまでの仮の枠の面。写真を入れたら消える。 */
+  --empty: var(--ground); /* 「空き」を表す線だけの四角の面。ink の枠で描く。 */
+}
+:root {
+  --margin-x: 160px; /* 左右の余白。本文の左端はすべてここ。 */
+  --margin-top: 120px; /* 上の余白。tag の位置。 */
+  --footer-top: 936px; /* 出典とページ番号の行の位置。 */
+  --gap-wide: 80px; /* 数字を3つ並べるときの間。 */
+  --frame-pad: 28px; /* 写真の枠の内側。 */
+  --radius-none: 0px; /* 角はすべて立てる。角丸は使わない。 */
+  --stroke: 2px; /* 空きの四角、帯の枠、軸。 */
+  --stroke-strong: 4px; /* 強調する空きの四角（部分）。 */
+  --font-sans: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  --text-huge: 200 280px/1.0 var(--font-sans); /* 主役の数字。1枚に1つ。単位は unit で数字の右下に。 */
+  --text-cover-title: 300 104px/132px var(--font-sans); /* 表紙の言い切り。2行まで。 */
+  --text-figure: 200 120px/120px var(--font-sans); /* 2番目の大きさの数字。帯や並びの上に置く。 */
+  --text-unit: 300 64px/80px var(--font-sans); /* huge の単位。 */
+  --text-say: 300 40px/64px var(--font-sans); /* 言い切りの1文。数字の下に1〜2行。 */
+  --text-note: 400 28px/48px var(--font-sans); /* 言い換えや前提の注記。ink-mute。 */
+  --text-tag: 400 24px/32px var(--font-sans); /* 左上の小見出し（実質のタイトル）。何の数字かを書く。ink-mute、字間 0.06em。 */
+}

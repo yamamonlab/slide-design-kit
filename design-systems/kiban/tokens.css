@@ -1,0 +1,101 @@
+/* Kiban スライド共通基盤 — generated from tokens.json */
+:root, [data-theme="base"] {
+  --ground: #fafaf8; /* 【枠】スライドの地。ブランドは必ず自分の値に置き換える。純白は地に使わない。 */
+  --surface: #ffffff; /* 【枠】箱・カード・図のノードの面。ground の上に置く。 */
+  --sunk: #f1f1ee; /* 【枠】沈めた面：表の見出し行、図のゾーン、補足のパネル。 */
+  --ink: #1a1a1a; /* 【枠】見出し・主な文字・意味のある太い線。ground・surface・sunk の上で 15:1 以上。 */
+  --ink-2: #3d3d3d; /* 【枠】本文・メッセージライン。ground・surface・sunk の上で 9.6:1 以上。 */
+  --ink-3: #666666; /* 【枠】注記・出典・ページ番号。ground で 5.5:1、sunk で 5.1:1。読ませる文字の下限で、これより薄い灰色を文字にしない。 */
+  --rule: #8a8a86; /* 【枠】意味を持つ罫線・枠線・比較系列。ground で 3.3:1、sunk で 3.1:1（線の下限 3:1 を満たす）。 */
+  --rule-soft: #e4e4e0; /* 【枠】装飾の区切り線・グラフの目盛線。これだけで区別を伝えない。 */
+  --accent: #2747a8; /* 【枠】唯一の強調色。1枚に1〜2か所。ground で 7.9:1、accent-bg で 7.1:1。ブランドは自分の強調色に置き換え、同じ基準を満たす。 */
+  --accent-bg: #eaeef8; /* 【枠】強調した箱の面（ごく薄い強調色）。文字は ink か accent。 */
+  --chart-base: var(--rule); /* 【枠】グラフの比較系列（前年・計画・その他）。 */
+  --on-ink: var(--surface); /* 【枠】ink の塗りの上の文字。ink の上で 17.4:1。 */
+  --on-accent: #ffffff; /* 【枠】accent の塗りの上の文字。accent の上で 8.2:1。 */
+}
+:root {
+  --grid-unit: 4px; /* 図の座標・寸法の最小単位。 */
+  --space-1: 8px; /* 強く関係する要素の間（ラベルと数値）。 */
+  --space-2: 16px; /* 列挙の項目間、タイトルとメッセージの間。 */
+  --space-3: 24px; /* 箱の内側の余白、見出し群の中の間隔。 */
+  --space-4: 32px; /* 箱同士、段落同士。 */
+  --space-6: 48px; /* 見出しと本文の間、カラムのガター、図の要素同士の最小間隔。 */
+  --space-8: 64px; /* 関係の薄いブロックの間。 */
+  --space-12: 96px; /* スライドの左右余白（既定）。 */
+  --radius-0: 0; /* 既定。箱は角を立てる。ブランドが角丸を使うなら、使う場面を README に書く。 */
+  --radius-full: 9999px; /* 番号の丸・点。 */
+  --slide-width: 1920px; /* スライドの幅。px ÷ 2 = pt。 */
+  --slide-height: 1080px; /* スライドの高さ。 */
+  --margin-x: 96px; /* 左右の余白（ブランドは 96〜120px）。 */
+  --margin-top: 64px; /* 上の余白（ブランドは 64〜88px）。 */
+  --margin-bottom: 96px; /* 下の余白。足元の出典・ページ番号は下から 40〜56px。 */
+  --grid-column: 100px; /* 1カラムの幅（左右 96px のとき）。 */
+  --grid-gutter: 48px; /* カラム間のガター。 */
+  --font-sans: "Noto Sans JP", "BIZ UDPGothic", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  --font-mono: "IBM Plex Mono", "Noto Sans Mono", Consolas, monospace;
+  --text-cover-title: 700 96px/1.3 var(--font-sans); /* 表紙だけ。2行まで。 */
+  --text-title: 700 64px/1.3 var(--font-sans); /* スライドのタイトル＝論点。ブランドは 48〜64px の範囲で選ぶ。 */
+  --text-heading: 700 44px/1.3 var(--font-sans); /* パネル・図の見出し、中扉の章名。 */
+  --text-message: 700 34px/1.5 var(--font-sans); /* メッセージライン＝結論。ブランドは 32〜34px。 */
+  --text-body: 400 28px/1.6 var(--font-sans); /* 投影の本文。ブランドは 24〜32px。 */
+  --text-caption: 400 24px/1.5 var(--font-sans); /* 注記・出典・凡例。投影資料の最小サイズ。 */
+  --text-figure: 500 128px/1.1 var(--font-mono); /* 主要指標の数字。 */
+  --text-mono-label: 500 24px/1.3 var(--font-mono); /* ページ番号・章番号・時刻。 */
+}
+.cover-title {
+  font-family: var(--font-sans);
+  font-size: 96px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.title {
+  font-family: var(--font-sans);
+  font-size: 64px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.heading {
+  font-family: var(--font-sans);
+  font-size: 44px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.message {
+  font-family: var(--font-sans);
+  font-size: 34px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.caption {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.figure {
+  font-family: var(--font-mono);
+  font-size: 128px;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: 0;
+}

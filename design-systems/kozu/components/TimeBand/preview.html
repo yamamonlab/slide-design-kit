@@ -1,0 +1,25 @@
+<!-- @dsCard group="図" height=200 -->
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>TimeBand</title>
+<style>
+html,body{margin:0;background:var(--ground);font-family:var(--font-sans);}
+.wrap{padding:20px;}
+.brks,.bar,.labs{display:flex;}
+.brk{display:flex;flex-direction:column;align-items:center;gap:3px;}
+.brk p{margin:0;font-size:13px;font-weight:700;color:var(--ink);}
+.brk div{align-self:stretch;height:7px;border:2px solid var(--rule);border-bottom:none;}
+.bar{height:38px;border:2px solid var(--rule);border-radius:7px;overflow:hidden;margin-top:6px;}
+.tb{display:flex;align-items:center;justify-content:center;border-left:2px solid var(--rule);font-size:12px;font-weight:700;color:var(--ink);}
+.tb:first-child{border-left:none;}
+.w{background:var(--surface);} .d{background:var(--ink);color:var(--on-ink);} .l{background:var(--tint);} .g{background:var(--sunk);}
+.lab{padding-left:3px;}
+.lab p{margin:0;font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.lab b{display:block;font-size:13px;color:var(--ink);}
+</style></head><body>
+<div class="wrap">
+<div class="brks"><div class="brk" style="width:204px"><p>始まり</p><div></div></div><div class="brk" style="width:563px"><p>本題</p><div></div></div><div class="brk" style="flex:1"><p>締め</p><div></div></div></div>
+<div class="bar"><div class="tb w" style="width:102px">10分</div><div class="tb w" style="width:102px">10分</div><div class="tb d" style="width:307px">30分</div><div class="tb l" style="width:256px">25分</div><div class="tb g" style="width:102px">10分</div><div class="tb w" style="flex:1">5分</div></div>
+<div class="labs"><div class="lab" style="width:102px"><p>19:00</p><b>受付</b></div><div class="lab" style="width:102px"><p>19:10</p><b>導入</b></div><div class="lab" style="width:307px"><p>19:20</p><b>解説</b></div><div class="lab" style="width:256px"><p>19:50</p><b>演習</b></div><div class="lab" style="width:102px"><p>20:15</p><b>共有</b></div><div class="lab"><p>20:25</p><b>質疑</b></div></div>
+<p style="margin:8px 0 0;font-size:12px;color:var(--ink-3);">例：90分の勉強会</p>
+</div>
+</body></html>

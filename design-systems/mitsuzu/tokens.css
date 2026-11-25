@@ -1,0 +1,34 @@
+/* 密図 — generated from tokens.json */
+:root, [data-theme="paper"] {
+  --ground: #eef0f2; /* 地。青みの薄い灰。 */
+  --ink: #16202b; /* 文字・線・枠。ground で 14.4:1。 */
+  --ink-mute: #4e5966; /* 小見出し、出典、目盛りの数字。ground で 6.2:1。 */
+  --grid: #c5cbd2; /* 目盛り線・補助の点線。1.4:1 なので意味を持たせない（飾りの補助線だけ）。 */
+  --cat-solar: #c98a12; /* 太陽光など、分類1。面には ink の 1.5px 枠を付ける。 */
+  --cat-wind: #2f8c97; /* 分類2。 */
+  --cat-geo: #a8472f; /* 分類3。 */
+  --cat-hydro: #2f6db0; /* 分類4。 */
+  --cat-bio: #5e7b30; /* 分類5。 */
+  --cat-nuclear: #6e4f9e; /* 分類6。 */
+  --cat-gray-1: #7c838a; /* まとまりの中の分類（灰の濃淡で）1。 */
+  --cat-gray-2: #3f454d; /* 灰の濃淡 2（いちばん濃い）。 */
+  --cat-gray-3: #a3a9af; /* 灰の濃淡 3（いちばん淡い）。 */
+}
+:root {
+  --margin-x: 96px; /* 左右の余白。 */
+  --margin-top: 64px; /* 上の余白。 */
+  --label-gap: 12px; /* 引き出し線の先とラベルの間。 */
+  --col-gap: 48px; /* 要点の列の間。 */
+  --radius-none: 0px; /* 角は立てる。 */
+  --stroke: 2px; /* 引き出し線・軸・ドーナツの枠。 */
+  --stroke-fine: 1.5px; /* 色の面の縁。淡い色を地から区別する。 */
+  --stroke-group: 10px; /* 外側の帯（まとまり）。 */
+  --font-sans: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  --text-cover-title: 900 88px/112px var(--font-sans); /* 表紙。3行まで。 */
+  --text-title: 700 48px/60px var(--font-sans); /* 論点の名詞句。 */
+  --text-lead: 400 28px/42px var(--font-sans); /* 結論を1文。 */
+  --text-figure: 900 96px/104px var(--font-sans); /* 要点の列の数字。tabular-nums。 */
+  --text-group: 700 28px/36px var(--font-sans); /* 側の注記の見出し。上に ink 2px の線。 */
+  --text-label: 400 24px/30px var(--font-sans); /* 図の中のラベル、引き出し線の先。分類名は 700。 */
+  --text-kicker: 700 24px/32px var(--font-sans); /* タイトルの上の小見出し。ink-mute、字間 0.08em。 */
+}

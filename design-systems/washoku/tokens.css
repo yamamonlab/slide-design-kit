@@ -1,0 +1,33 @@
+/* 和色 — generated from tokens.json */
+:root, [data-theme="paper"] {
+  --ground: #eeede8; /* 灰白の紙。 */
+  --ink: #2a2928; /* 墨。文字と線。ground で 12.4:1。 */
+  --ink-mute: #5e5c58; /* 注記・出典・月の目盛り。ground で 5.7:1。 */
+  --ai: #1e3a5c; /* 藍。主の色：小見出し、青海波の地、いちばん深いもの（冬至）。ground で 9.9:1。 */
+  --arc: #8c8a85; /* 円弧・目盛り・区切りの線。ground で 2.9:1（線の 3:1 にわずかに届かない。意味は色の帯が担い、線は補助）。 */
+  --kuchiba: #a36b3c; /* 朽葉色。季節の帯の1色目（立冬）。上の白抜き文字は 3.8:1、44px の明朝なら読める。 */
+  --shironezumi: #b8b6b0; /* 白鼠。帯の2色目（小雪）。地と 1.7:1 なので、墨の縁を付けて使う。上の文字は墨。 */
+  --ginnezumi: #8f9194; /* 銀鼠。帯の3色目（大雪）。上の文字は墨（4.6:1）。 */
+  --ai-iro: var(--ai); /* 藍色。帯の4色目（冬至）。 */
+  --konnezumi: #44495a; /* 紺鼠。帯の5色目（小寒）。白抜き 7.6:1。 */
+  --sumi: var(--ink); /* 墨。帯の6色目（大寒）。 */
+  --koubai: #c96a86; /* 紅梅色。次の季節のはじまり（立春）の印だけ。 */
+}
+:root {
+  --margin-x: 160px; /* 左右の余白。 */
+  --margin-top: 96px; /* 上の余白。 */
+  --band-height: 160px; /* 季節の帯の高さ。 */
+  --chip-gap: 28px; /* 色見本の間。 */
+  --radius-none: 0px; /* 角は立てる。丸は円弧と点だけ。 */
+  --stroke-arc: 3px; /* 円弧・目盛り。 */
+  --stroke-season: 34px; /* 円弧の上の季節の色の帯。 */
+  --stroke-pattern: 3px; /* 青海波の線（地の色）。 */
+  --font-serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-sans: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  --text-cover-title: 600 120px/150px var(--font-serif); /* 表紙。字間 0.08em。 */
+  --text-title: 600 60px/76px var(--font-serif); /* 論点の名詞句。字間 0.04em。 */
+  --text-season-name: 600 40px/52px var(--font-serif); /* 節気・色の名前。帯の中は 44px。 */
+  --text-lead: 400 28px/44px var(--font-sans); /* 結論を1文。 */
+  --text-kicker: 700 24px/32px var(--font-sans); /* 小見出し。藍、字間 0.12em。 */
+  --text-label: 400 24px/32px var(--font-sans); /* 日付・時刻・度数。tabular-nums。 */
+}

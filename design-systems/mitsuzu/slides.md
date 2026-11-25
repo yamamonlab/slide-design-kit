@@ -1,0 +1,60 @@
+# Slides 形式で写して使う見本
+
+密図 のデッキは、図を SVG（文字なし）で描き、ラベルは HTML の文字（24px 以上）で重ねる。1つの箱に置く `position:absolute` の要素は24個まで。
+
+見本の実物：[電気は、何でつくられているか](../../samples/denki/)。下の各見本の後ろに、そのデッキの何枚目かを書く。値はすべて hex を直書き（Slides の中では `var()` を使えない）。
+
+## 要点の列 — 2枚目
+
+`<div class="cols">` に `<div class="cl"><p class="t">項目</p><p class="v">68.6%</p><p class="d">注記</p>…</div>` を3つ。
+
+## 輪と引き出し線 — 3枚目
+
+ドーナツは SVG の path。中央に合計（44px・900）。引き出し線は polyline。ラベルは左右の列に等間隔。右に `side` の注記（group 見出し＋行）。
+
+## 増減の棒 — 4枚目
+
+0 の縦線を x=900 に。1% = 14px。
+
+## 推移の折れ線 — 5枚目
+
+3点の折れ線を2つ並べる。縦軸の範囲が違うときは注記に書く。
+
+## ダンベル — 7枚目
+
+x0=420、1% = 14px、行の高さ 88px。凡例は図の下に1行で記号と意味。
+
+## 項目と値の行 — 9・10枚目
+
+`<div class="kv">` を高さ 720px の箱の中で flex:1。
+
+## deck.css
+
+デッキの `project/deck.css` にそのまま置く。
+
+```css
+/* 密な図解：細い線と小さな文字で、関係を1枚に詰める。注記を図の中に書く。最小文字24px */
+section { background:#EEF0F2; color:#16202B; font-family:'Noto Sans JP','Noto Sans CJK JP',sans-serif; font-weight:400; padding:0; position:relative; }
+section .k { position:absolute; left:96px; top:64px; width:1700px; margin:0; font-size:24px; line-height:32px; font-weight:700; color:#4E5966; letter-spacing:0.08em; }
+section h2 { position:absolute; left:96px; top:100px; width:1700px; margin:0; font-size:48px; line-height:60px; font-weight:700; color:#16202B; }
+section .ld { position:absolute; left:96px; top:168px; width:1728px; margin:0; font-size:28px; line-height:42px; color:#16202B; }
+section .src { position:absolute; left:96px; top:1000px; width:1560px; margin:0; font-size:24px; line-height:32px; color:#4E5966; }
+section .pg { position:absolute; left:1664px; top:1000px; width:160px; margin:0; text-align:right; font-size:24px; line-height:32px; color:#4E5966; }
+section .lb { position:absolute; margin:0; font-size:24px; line-height:30px; color:#16202B; }
+section .lb b { font-weight:700; }
+section .cc { position:absolute; margin:0; text-align:center; color:#16202B; }
+section .side { position:absolute; display:flex; flex-direction:column; gap:12px; }
+section .grp { margin:0; font-size:28px; line-height:36px; font-weight:700; color:#16202B; border-top:2px solid #16202B; padding-top:8px; }
+section .rn { margin:0; font-size:24px; line-height:34px; color:#16202B; }
+section .row { display:flex; flex-direction:row; align-items:center; gap:12px; }
+section .ttl { position:absolute; left:96px; top:250px; width:900px; margin:0; font-size:88px; line-height:112px; font-weight:900; color:#16202B; }
+section .sub { position:absolute; left:96px; top:640px; width:820px; margin:0; font-size:32px; line-height:48px; color:#16202B; }
+section .cols { position:absolute; left:96px; top:260px; width:1728px; display:flex; flex-direction:row; gap:48px; }
+section .cl { flex:1; border-top:4px solid #16202B; padding-top:16px; display:flex; flex-direction:column; gap:8px; }
+section .cl .t { margin:0; font-size:28px; line-height:36px; font-weight:700; color:#16202B; }
+section .cl .v { margin:0; font-size:96px; line-height:104px; font-weight:900; color:#16202B; font-variant-numeric:tabular-nums; }
+section .cl .d { margin:0; font-size:24px; line-height:36px; color:#16202B; border-top:2px dotted #C5CBD2; padding-top:8px; }
+section .kv { flex:1; display:flex; flex-direction:row; align-items:center; gap:24px; border-top:2px solid #C5CBD2; padding:16px 0; }
+section .kvk { margin:0; flex:0 0 280px; font-size:24px; line-height:36px; font-weight:700; color:#4E5966; }
+section .kvv { margin:0; flex:1; font-size:28px; line-height:42px; color:#16202B; }
+```
