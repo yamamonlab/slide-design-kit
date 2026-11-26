@@ -27,13 +27,27 @@ PDF と PPTX は [Releases](https://github.com/yamamonlab/slide-design-kit/relea
 
 ## 3分で始める
 
-1. 右上の **Code → Download ZIP** でこのリポジトリを手元に保存し、展開する。
-2. [見本](#見本のスライド)を見て、作りたい資料に近いものを1つ選ぶ。
-3. [`docs/はじめての人へ.md`](docs/はじめての人へ.md) の手順どおりに、そのデザインシステムを Claude に渡すか、PowerPoint・Googleスライドに色を写す。
+ダウンロードは要りません。このページを見ながら進めます。
+
+1. [見本](#見本のスライド)を見て、作りたい資料に近いものを1つ選ぶ。
+2. **Claude を使うとき**：Claude の新しいチャットに、次の形で送る。`kozu` は選んだデザインシステムのフォルダ名に置き換える（`yohaku`・`mitsuzu`・`hyoshiki`・`washoku`）。
+
+   ```text
+   次のデザインシステムを読んで、その決まりどおりに、下の素材から日本語のスライドを5枚作ってください。
+   https://raw.githubusercontent.com/yamamonlab/slide-design-kit/main/design-systems/kozu/README.md
+   https://raw.githubusercontent.com/yamamonlab/slide-design-kit/main/design-systems/kozu/slides.md
+
+   【素材】
+   〈ここに材料を貼る〉
+   ```
+
+3. **PowerPoint・Googleスライドで作るとき**：選んだデザインシステムのフォルダの `tokens.css` をこのページで開き、色と文字の大きさを写す。
+
+詳しい手順は [`docs/はじめての人へ.md`](docs/はじめての人へ.md) にあります。
 
 | 読むもの | 中身 |
 |---|---|
-| [はじめての人へ](docs/はじめての人へ.md) | 取り込みから1枚目のスライドまでの手順（Claude を使う道／使わない道） |
+| [はじめての人へ](docs/はじめての人へ.md) | デザインシステムを選んでから1枚目のスライドまでの手順（Claude を使う道／使わない道） |
 | [依頼文の例](docs/依頼文の例.md) | 資料の型ごとの、コピーして使える依頼文 |
 | [チェックリスト](docs/チェックリスト.md) | できあがったスライドを確かめる項目 |
 
